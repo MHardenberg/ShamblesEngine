@@ -35,7 +35,7 @@ add_executable(Shambles ${SOURCES})
 target_include_directories(Shambles PRIVATE 
     ${CMAKE_SOURCE_DIR}/external/GLAD/include/ 
     ${CMAKE_SOURCE_DIR}/external/GLFW/include/ 
-    ${CMAKE_SOURCE_DIR}/src/MACROS/
+    ${CMAKE_SOURCE_DIR}/src/core/
     )
 
 # Link GLFW and OpenGL
