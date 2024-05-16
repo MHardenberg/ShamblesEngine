@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/michel/git_playground/ShamblesEngine/external/GLAD/include -I/home/michel/git_playground/ShamblesEngine/external/GLFW/include -I/home/michel/git_playground/ShamblesEngine/src/MACROS
+C_INCLUDES = -I/home/michel/git_playground/Shambles/external/GLAD/include -I/home/michel/git_playground/Shambles/external/GLFW/include -I/home/michel/git_playground/Shambles/src/MACROS
 
 C_FLAGS = -g
 

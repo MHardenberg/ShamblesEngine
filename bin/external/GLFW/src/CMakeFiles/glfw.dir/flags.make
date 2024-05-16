@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11
 
-C_INCLUDES = -I/home/michel/git_playground/ShamblesEngine/external/GLFW/include -I/home/michel/git_playground/ShamblesEngine/external/GLFW/src -I/home/michel/git_playground/ShamblesEngine/bin/external/GLFW/src
+C_INCLUDES = -I/home/michel/git_playground/Shambles/external/GLFW/include -I/home/michel/git_playground/Shambles/external/GLFW/src -I/home/michel/git_playground/Shambles/bin/external/GLFW/src
 
 C_FLAGS = -g -std=c99 -fPIC -Wall
 

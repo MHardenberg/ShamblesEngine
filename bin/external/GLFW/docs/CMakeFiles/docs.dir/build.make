@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michel/git_playground/ShamblesEngine
+CMAKE_SOURCE_DIR = /home/michel/git_playground/Shambles
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michel/git_playground/ShamblesEngine/bin
+CMAKE_BINARY_DIR = /home/michel/git_playground/Shambles/bin
 
 # Utility rule file for docs.
 
@@ -74,10 +74,10 @@ external/GLFW/docs/CMakeFiles/docs.dir/build: docs
 .PHONY : external/GLFW/docs/CMakeFiles/docs.dir/build
 
 external/GLFW/docs/CMakeFiles/docs.dir/clean:
-	cd /home/michel/git_playground/ShamblesEngine/bin/external/GLFW/docs && $(CMAKE_COMMAND) -P CMakeFiles/docs.dir/cmake_clean.cmake
+	cd /home/michel/git_playground/Shambles/bin/external/GLFW/docs && $(CMAKE_COMMAND) -P CMakeFiles/docs.dir/cmake_clean.cmake
 .PHONY : external/GLFW/docs/CMakeFiles/docs.dir/clean
 
 external/GLFW/docs/CMakeFiles/docs.dir/depend:
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michel/git_playground/ShamblesEngine /home/michel/git_playground/ShamblesEngine/external/GLFW/docs /home/michel/git_playground/ShamblesEngine/bin /home/michel/git_playground/ShamblesEngine/bin/external/GLFW/docs /home/michel/git_playground/ShamblesEngine/bin/external/GLFW/docs/CMakeFiles/docs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/michel/git_playground/Shambles/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michel/git_playground/Shambles /home/michel/git_playground/Shambles/external/GLFW/docs /home/michel/git_playground/Shambles/bin /home/michel/git_playground/Shambles/bin/external/GLFW/docs /home/michel/git_playground/Shambles/bin/external/GLFW/docs/CMakeFiles/docs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : external/GLFW/docs/CMakeFiles/docs.dir/depend
 

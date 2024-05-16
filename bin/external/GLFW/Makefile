@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michel/git_playground/ShamblesEngine
+CMAKE_SOURCE_DIR = /home/michel/git_playground/Shambles
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michel/git_playground/ShamblesEngine/bin
+CMAKE_BINARY_DIR = /home/michel/git_playground/Shambles/bin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles /home/michel/git_playground/ShamblesEngine/bin/external/GLFW//CMakeFiles/progress.marks
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles 0
+	cd /home/michel/git_playground/Shambles/bin && $(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles /home/michel/git_playground/Shambles/bin/external/GLFW//CMakeFiles/progress.marks
+	cd /home/michel/git_playground/Shambles/bin && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/clean
+	cd /home/michel/git_playground/Shambles/bin && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/preinstall
+	cd /home/michel/git_playground/Shambles/bin && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/preinstall
+	cd /home/michel/git_playground/Shambles/bin && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/michel/git_playground/Shambles/bin && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/GLFW/CMakeFiles/uninstall.dir/rule:
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/CMakeFiles/uninstall.dir/rule
+	cd /home/michel/git_playground/Shambles/bin && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/CMakeFiles/uninstall.dir/rule
 .PHONY : external/GLFW/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ uninstall: external/GLFW/CMakeFiles/uninstall.dir/rule
 
 # fast build rule for target.
 uninstall/fast:
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(MAKE) $(MAKESILENT) -f external/GLFW/CMakeFiles/uninstall.dir/build.make external/GLFW/CMakeFiles/uninstall.dir/build
+	cd /home/michel/git_playground/Shambles/bin && $(MAKE) $(MAKESILENT) -f external/GLFW/CMakeFiles/uninstall.dir/build.make external/GLFW/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 # Help Target
@@ -199,6 +199,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/michel/git_playground/Shambles/bin && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

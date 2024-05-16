@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michel/git_playground/ShamblesEngine
+CMAKE_SOURCE_DIR = /home/michel/git_playground/Shambles
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michel/git_playground/ShamblesEngine/bin
+CMAKE_BINARY_DIR = /home/michel/git_playground/Shambles/bin
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -133,14 +133,14 @@ external/GLFW/src/clean: external/GLFW/src/CMakeFiles/update_mappings.dir/clean
 CMakeFiles/Shambles.dir/all: external/GLFW/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shambles.dir/build.make CMakeFiles/Shambles.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shambles.dir/build.make CMakeFiles/Shambles.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/michel/git_playground/ShamblesEngine/bin/CMakeFiles --progress-num=1,2,3 "Built target Shambles"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/michel/git_playground/Shambles/bin/CMakeFiles --progress-num=1,2,3 "Built target Shambles"
 .PHONY : CMakeFiles/Shambles.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Shambles.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Shambles.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles 0
 .PHONY : CMakeFiles/Shambles.dir/rule
 
 # Convenience name for target.
@@ -159,14 +159,14 @@ CMakeFiles/Shambles.dir/clean:
 external/GLFW/CMakeFiles/uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/GLFW/CMakeFiles/uninstall.dir/build.make external/GLFW/CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/GLFW/CMakeFiles/uninstall.dir/build.make external/GLFW/CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/michel/git_playground/ShamblesEngine/bin/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/michel/git_playground/Shambles/bin/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : external/GLFW/CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 external/GLFW/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles 0
 .PHONY : external/GLFW/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -185,14 +185,14 @@ external/GLFW/CMakeFiles/uninstall.dir/clean:
 external/GLFW/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/GLFW/src/CMakeFiles/glfw.dir/build.make external/GLFW/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/GLFW/src/CMakeFiles/glfw.dir/build.make external/GLFW/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/michel/git_playground/ShamblesEngine/bin/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/michel/git_playground/Shambles/bin/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48 "Built target glfw"
 .PHONY : external/GLFW/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 external/GLFW/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles 45
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles 0
 .PHONY : external/GLFW/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
@@ -211,14 +211,14 @@ external/GLFW/src/CMakeFiles/glfw.dir/clean:
 external/GLFW/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/GLFW/src/CMakeFiles/update_mappings.dir/build.make external/GLFW/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/GLFW/src/CMakeFiles/update_mappings.dir/build.make external/GLFW/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/michel/git_playground/ShamblesEngine/bin/CMakeFiles --progress-num=49 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/michel/git_playground/Shambles/bin/CMakeFiles --progress-num=49 "Built target update_mappings"
 .PHONY : external/GLFW/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
 external/GLFW/src/CMakeFiles/update_mappings.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/src/CMakeFiles/update_mappings.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles 0
 .PHONY : external/GLFW/src/CMakeFiles/update_mappings.dir/rule
 
 # Convenience name for target.
@@ -237,14 +237,14 @@ external/GLFW/src/CMakeFiles/update_mappings.dir/clean:
 external/GLFW/docs/CMakeFiles/docs.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/GLFW/docs/CMakeFiles/docs.dir/build.make external/GLFW/docs/CMakeFiles/docs.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/GLFW/docs/CMakeFiles/docs.dir/build.make external/GLFW/docs/CMakeFiles/docs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/michel/git_playground/ShamblesEngine/bin/CMakeFiles --progress-num= "Built target docs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/michel/git_playground/Shambles/bin/CMakeFiles --progress-num= "Built target docs"
 .PHONY : external/GLFW/docs/CMakeFiles/docs.dir/all
 
 # Build rule for subdir invocation for target.
 external/GLFW/docs/CMakeFiles/docs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/GLFW/docs/CMakeFiles/docs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michel/git_playground/Shambles/bin/CMakeFiles 0
 .PHONY : external/GLFW/docs/CMakeFiles/docs.dir/rule
 
 # Convenience name for target.

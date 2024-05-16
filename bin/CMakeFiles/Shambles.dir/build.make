@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michel/git_playground/ShamblesEngine
+CMAKE_SOURCE_DIR = /home/michel/git_playground/Shambles
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michel/git_playground/ShamblesEngine/bin
+CMAKE_BINARY_DIR = /home/michel/git_playground/Shambles/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Shambles.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/Shambles.dir/progress.make
 include CMakeFiles/Shambles.dir/flags.make
 
 CMakeFiles/Shambles.dir/src/main.c.o: CMakeFiles/Shambles.dir/flags.make
-CMakeFiles/Shambles.dir/src/main.c.o: /home/michel/git_playground/ShamblesEngine/src/main.c
+CMakeFiles/Shambles.dir/src/main.c.o: /home/michel/git_playground/Shambles/src/main.c
 CMakeFiles/Shambles.dir/src/main.c.o: CMakeFiles/Shambles.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/michel/git_playground/ShamblesEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Shambles.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shambles.dir/src/main.c.o -MF CMakeFiles/Shambles.dir/src/main.c.o.d -o CMakeFiles/Shambles.dir/src/main.c.o -c /home/michel/git_playground/ShamblesEngine/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/michel/git_playground/Shambles/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Shambles.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shambles.dir/src/main.c.o -MF CMakeFiles/Shambles.dir/src/main.c.o.d -o CMakeFiles/Shambles.dir/src/main.c.o -c /home/michel/git_playground/Shambles/src/main.c
 
 CMakeFiles/Shambles.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Shambles.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/michel/git_playground/ShamblesEngine/src/main.c > CMakeFiles/Shambles.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/michel/git_playground/Shambles/src/main.c > CMakeFiles/Shambles.dir/src/main.c.i
 
 CMakeFiles/Shambles.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Shambles.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/michel/git_playground/ShamblesEngine/src/main.c -o CMakeFiles/Shambles.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/michel/git_playground/Shambles/src/main.c -o CMakeFiles/Shambles.dir/src/main.c.s
 
 CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o: CMakeFiles/Shambles.dir/flags.make
-CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o: /home/michel/git_playground/ShamblesEngine/external/GLAD/src/glad.c
+CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o: /home/michel/git_playground/Shambles/external/GLAD/src/glad.c
 CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o: CMakeFiles/Shambles.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/michel/git_playground/ShamblesEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o -MF CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o.d -o CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o -c /home/michel/git_playground/ShamblesEngine/external/GLAD/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/michel/git_playground/Shambles/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o -MF CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o.d -o CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o -c /home/michel/git_playground/Shambles/external/GLAD/src/glad.c
 
 CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/michel/git_playground/ShamblesEngine/external/GLAD/src/glad.c > CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/michel/git_playground/Shambles/external/GLAD/src/glad.c > CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.i
 
 CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/michel/git_playground/ShamblesEngine/external/GLAD/src/glad.c -o CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/michel/git_playground/Shambles/external/GLAD/src/glad.c -o CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.s
 
 # Object files for target Shambles
 Shambles_OBJECTS = \
@@ -113,7 +113,7 @@ Shambles: /usr/lib/libGL.so
 Shambles: /usr/lib/librt.a
 Shambles: /usr/lib/libm.so
 Shambles: CMakeFiles/Shambles.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/michel/git_playground/ShamblesEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Shambles"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/michel/git_playground/Shambles/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Shambles"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Shambles.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +125,6 @@ CMakeFiles/Shambles.dir/clean:
 .PHONY : CMakeFiles/Shambles.dir/clean
 
 CMakeFiles/Shambles.dir/depend:
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michel/git_playground/ShamblesEngine /home/michel/git_playground/ShamblesEngine /home/michel/git_playground/ShamblesEngine/bin /home/michel/git_playground/ShamblesEngine/bin /home/michel/git_playground/ShamblesEngine/bin/CMakeFiles/Shambles.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/michel/git_playground/Shambles/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michel/git_playground/Shambles /home/michel/git_playground/Shambles /home/michel/git_playground/Shambles/bin /home/michel/git_playground/Shambles/bin /home/michel/git_playground/Shambles/bin/CMakeFiles/Shambles.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Shambles.dir/depend
 

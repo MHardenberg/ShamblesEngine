@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michel/git_playground/ShamblesEngine
+CMAKE_SOURCE_DIR = /home/michel/git_playground/Shambles
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michel/git_playground/ShamblesEngine/bin
+CMAKE_BINARY_DIR = /home/michel/git_playground/Shambles/bin
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include external/GLFW/CMakeFiles/uninstall.dir/compiler_depend.make
 include external/GLFW/CMakeFiles/uninstall.dir/progress.make
 
 external/GLFW/CMakeFiles/uninstall:
-	cd /home/michel/git_playground/ShamblesEngine/bin/external/GLFW && /usr/bin/cmake -P /home/michel/git_playground/ShamblesEngine/bin/external/GLFW/cmake_uninstall.cmake
+	cd /home/michel/git_playground/Shambles/bin/external/GLFW && /usr/bin/cmake -P /home/michel/git_playground/Shambles/bin/external/GLFW/cmake_uninstall.cmake
 
 uninstall: external/GLFW/CMakeFiles/uninstall
 uninstall: external/GLFW/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ external/GLFW/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : external/GLFW/CMakeFiles/uninstall.dir/build
 
 external/GLFW/CMakeFiles/uninstall.dir/clean:
-	cd /home/michel/git_playground/ShamblesEngine/bin/external/GLFW && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/michel/git_playground/Shambles/bin/external/GLFW && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : external/GLFW/CMakeFiles/uninstall.dir/clean
 
 external/GLFW/CMakeFiles/uninstall.dir/depend:
-	cd /home/michel/git_playground/ShamblesEngine/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michel/git_playground/ShamblesEngine /home/michel/git_playground/ShamblesEngine/external/GLFW /home/michel/git_playground/ShamblesEngine/bin /home/michel/git_playground/ShamblesEngine/bin/external/GLFW /home/michel/git_playground/ShamblesEngine/bin/external/GLFW/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/michel/git_playground/Shambles/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michel/git_playground/Shambles /home/michel/git_playground/Shambles/external/GLFW /home/michel/git_playground/Shambles/bin /home/michel/git_playground/Shambles/bin/external/GLFW /home/michel/git_playground/Shambles/bin/external/GLFW/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : external/GLFW/CMakeFiles/uninstall.dir/depend
 

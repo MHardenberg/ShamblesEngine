@@ -1,4 +1,4 @@
-# Install script for directory: /home/michel/git_playground/ShamblesEngine/external/GLFW/src
+# Install script for directory: /home/michel/git_playground/Shambles/external/GLFW/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,6 +43,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/michel/git_playground/ShamblesEngine/bin/external/GLFW/src/libglfw3.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/michel/git_playground/Shambles/bin/external/GLFW/src/libglfw3.a")
 endif()
 

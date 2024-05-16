@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/michel/git_playground/ShamblesEngine/external/GLAD/src/glad.c" "CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o" "gcc" "CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o.d"
-  "/home/michel/git_playground/ShamblesEngine/src/main.c" "CMakeFiles/Shambles.dir/src/main.c.o" "gcc" "CMakeFiles/Shambles.dir/src/main.c.o.d"
+  "/home/michel/git_playground/Shambles/external/GLAD/src/glad.c" "CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o" "gcc" "CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o.d"
+  "/home/michel/git_playground/Shambles/src/main.c" "CMakeFiles/Shambles.dir/src/main.c.o" "gcc" "CMakeFiles/Shambles.dir/src/main.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
