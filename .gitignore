@@ -2,6 +2,9 @@
 bin/*
 !bin/.gitkeep
 
+#clangd
+.cache/*
+
 # Prerequisites
 *.d
 
