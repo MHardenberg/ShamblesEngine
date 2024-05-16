@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/Shambles.dir/src/main.c.o CMakeFiles/Shambles.dir/external/GLAD/src/glad.c.o -o Shambles  external/GLFW/src/libglfw3.a /usr/lib/libGL.so /usr/lib/librt.a -lm -ldl
