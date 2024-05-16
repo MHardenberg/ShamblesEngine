@@ -15,6 +15,7 @@ set(CMAKE_CC_FLAGS_RELEASE "${CMAKE_CXX_FLAGS} -O3 -s")
 
 
 # Find OpenGL package
+set(OpenGL_GL_PREFERENCE GLVND)
 find_package(OpenGL REQUIRED)
 
 # dependencies
@@ -23,8 +24,10 @@ add_subdirectory(external/GLFW)
 
 # Executable sources
 set(SOURCES 
-    src/main.c 
-    ./external/GLAD/src/glad.c
+    ${CMAKE_SOURCE_DIR}/src/main.c 
+    ${CMAKE_SOURCE_DIR}/src/engine/ui/ui.c 
+    # external
+    ${CMAKE_SOURCE_DIR}/external/GLAD/src/glad.c
     )
 
 
@@ -35,6 +38,7 @@ add_executable(Shambles ${SOURCES})
 target_include_directories(Shambles PRIVATE 
     ${CMAKE_SOURCE_DIR}/external/GLAD/include/ 
     ${CMAKE_SOURCE_DIR}/external/GLFW/include/ 
+    ${CMAKE_SOURCE_DIR}/src/
     ${CMAKE_SOURCE_DIR}/src/core/
     )
 
