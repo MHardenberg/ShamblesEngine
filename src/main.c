@@ -4,7 +4,7 @@
 
 
 int main() {
-    printf("We're in shambles!!!!!\n");
+    LOG_M("We're in shambles!!!!!\n");
     SHAM_ui* ui_ptr = SHAM_UI_create();
 
 
