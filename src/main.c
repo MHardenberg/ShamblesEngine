@@ -2,13 +2,13 @@
 #include <shamCore.h>
 #include <engine/ui/ui.h>
 
+
 int main() {
     printf("We're in shambles!!!!!\n");
+    SHAM_ui* ui_ptr = SHAM_UI_create();
 
-    SHAM_ui* ui_ptr = SHAM_create_window();
 
-
-    while (!SHAM_isRunning(ui_ptr)) {
+    while (!SHAM_UI_isRunning(ui_ptr)) {
         // process input and act
         glClear(GL_COLOR_BUFFER_BIT);
 
@@ -21,6 +21,6 @@ int main() {
         glfwSwapBuffers((GLFWwindow*)ui_ptr->sysWindow);
     }
 
-    SHAM_freeUI(ui_ptr);
+    SHAM_UI_destroy(ui_ptr);
     return 0;
 }

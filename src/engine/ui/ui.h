@@ -17,9 +17,9 @@ typedef struct SHAM_ui {
 } SHAM_ui;
 
 
-SHAM_ui* SHAM_create_window(); 
+SHAM_ui* SHAM_UI_create(); 
 
-void SHAM_freeUI(SHAM_ui* ptr);
+void SHAM_UI_destroy(SHAM_ui* ptr);
 
-bool SHAM_isRunning(SHAM_ui *ptr);
+bool SHAM_UI_isRunning(SHAM_ui *ptr);
 #endif // !window_H

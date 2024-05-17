@@ -5,7 +5,7 @@
 #include <string.h>
 
 
-SHAM_ui* SHAM_create_window() {
+SHAM_ui* SHAM_UI_create() {
     // create heaped window
     if (!glfwInit()) {
         LOG_FMT_M("%s\n", "glfw initalisation failed.");
@@ -50,14 +50,14 @@ exitFailure:
 }
 
 
-void SHAM_freeUI(SHAM_ui *ptr) {
+void SHAM_UI_destroy(SHAM_ui *ptr) {
     glfwDestroyWindow((GLFWwindow*)ptr->sysWindow);
     glfwTerminate();
      free(ptr);
 }
 
 
-bool SHAM_isRunning(SHAM_ui* ptr) {
+bool SHAM_UI_isRunning(SHAM_ui* ptr) {
     if (ptr == NULL) {
         LOG_FMT_M("%s", "UI pointer is NULL!");
         return false;
