@@ -25,7 +25,7 @@ add_subdirectory(external/GLFW)
 # Executable sources
 set(SOURCES 
     ${CMAKE_SOURCE_DIR}/src/main.c 
-    ${CMAKE_SOURCE_DIR}/src/engine/ui/ui.c 
+    ${CMAKE_SOURCE_DIR}/src/shamEngine/ui/ui.c 
     # external
     ${CMAKE_SOURCE_DIR}/external/GLAD/src/glad.c
     )

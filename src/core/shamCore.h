@@ -1,7 +1,7 @@
 #ifndef core_H
 #define DEVEL
 
-// data
+// data  
 #include <stdint.h>
 typedef int8_t i8;
 typedef int16_t i16;
@@ -16,6 +16,11 @@ typedef uint64_t u64;
 typedef short f16;
 typedef float f32;
 typedef double f64;
+
+
+// defines
+#define EXIT_SUCCESS 0
+#define EXIT_FAILURE 1
 
 
 // constants

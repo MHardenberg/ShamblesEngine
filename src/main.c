@@ -1,6 +1,5 @@
-#include <stdio.h>
 #include <shamCore.h>
-#include <engine/ui/ui.h>
+#include <shamEngine/ui/ui.h>
 
 
 int main() {
@@ -9,18 +8,10 @@ int main() {
 
 
     while (!SHAM_UI_isRunning(ui_ptr)) {
-        // process input and act
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        // Render here
-        
-        // Poll for and process events
-        glfwPollEvents();
-
-        // Swap front and back buffers
-        glfwSwapBuffers((GLFWwindow*)ui_ptr->external.sysWindow);
+        if (SHAM_UI_update(ui_ptr)) {break;}
     }
 
     SHAM_UI_destroy(ui_ptr);
+    LOG_M("Rattled!\n");
     return 0;
 }

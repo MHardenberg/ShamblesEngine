@@ -64,3 +64,23 @@ bool SHAM_UI_isRunning(SHAM_ui* ptr) {
     }
     return glfwWindowShouldClose((GLFWwindow*) ptr->external.sysWindow);
 }
+
+
+int SHAM_UI_update(SHAM_ui *ui_ptr) {
+        // process input and act
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        // Render here
+        // ...
+        
+        // Poll for and process events
+        glfwPollEvents();
+
+        // Swap front and back buffers
+        glfwSwapBuffers((GLFWwindow*)ui_ptr->external.sysWindow);
+
+        return EXIT_SUCCESS;
+
+exitFailure:
+        return EXIT_FAILURE;
+}
