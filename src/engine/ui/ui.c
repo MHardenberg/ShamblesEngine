@@ -28,7 +28,7 @@ SHAM_ui* SHAM_UI_create() {
 
     // init SHAM window
     SHAM_ui ui = {
-        .WIDTH = BASE_WIDTH, .HEIGHT = BASE_HEIGHT, .sysWindow = glWindow};
+        .WIDTH = BASE_WIDTH, .HEIGHT = BASE_HEIGHT, .external.sysWindow = glWindow};
     SHAM_ui* ui_ptr = malloc(sizeof(SHAM_ui));
     if (ui_ptr == NULL){goto cleanUpUi;}
     memcpy(ui_ptr, &ui, sizeof(*ui_ptr));
@@ -51,7 +51,7 @@ exitFailure:
 
 
 void SHAM_UI_destroy(SHAM_ui *ptr) {
-    glfwDestroyWindow((GLFWwindow*)ptr->sysWindow);
+    glfwDestroyWindow((GLFWwindow*)ptr->external.sysWindow);
     glfwTerminate();
      free(ptr);
 }
@@ -62,5 +62,5 @@ bool SHAM_UI_isRunning(SHAM_ui* ptr) {
         LOG_FMT_M("%s", "UI pointer is NULL!");
         return false;
     }
-    return glfwWindowShouldClose((GLFWwindow*) ptr->sysWindow);
+    return glfwWindowShouldClose((GLFWwindow*) ptr->external.sysWindow);
 }

@@ -18,7 +18,7 @@ int main() {
         glfwPollEvents();
 
         // Swap front and back buffers
-        glfwSwapBuffers((GLFWwindow*)ui_ptr->sysWindow);
+        glfwSwapBuffers((GLFWwindow*)ui_ptr->external.sysWindow);
     }
 
     SHAM_UI_destroy(ui_ptr);

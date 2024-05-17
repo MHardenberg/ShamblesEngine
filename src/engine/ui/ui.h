@@ -9,11 +9,12 @@
 #include <stdbool.h>
 
 
-typedef struct SHAM_ui {
+typedef struct {
     const u16 WIDTH, HEIGHT;
+    struct {
+        const GLFWwindow* sysWindow;
+    } external;
 
-    // external stuff
-    const GLFWwindow* sysWindow;
 } SHAM_ui;
 
 
