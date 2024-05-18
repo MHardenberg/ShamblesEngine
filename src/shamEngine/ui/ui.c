@@ -1,4 +1,7 @@
 #include "ui.h"
+#include <shamEngine/shader/shader.h>
+
+
 #include "GLFW/glfw3.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,7 +12,7 @@ SHAM_ui* SHAM_UI_create() {
     // create heaped window
     if (!glfwInit()) {
         LOG_FMT_M("%s\n", "glfw initalisation failed.");
-        goto exitFailure;
+        return NULL;
     }
     
 
@@ -34,9 +37,17 @@ SHAM_ui* SHAM_UI_create() {
     memcpy(ui_ptr, &ui, sizeof(*ui_ptr));
 
 
-exitSuccess:
+    // init buffers
+    glGenBuffers(1, &ui_ptr->external.vertexBufferObject);
+
+
+    // compile shader 
+    if (SHAM_SHADER_create(ui_ptr)){goto exitFailure;}
+
     return ui_ptr;
 
+
+exitFailure:
 // only clean on failure
 cleanUpUi:
     free(ui_ptr);
@@ -45,7 +56,6 @@ cleanUpGL:
     glfwDestroyWindow(glWindow);
     glfwTerminate();
 
-exitFailure:
     return NULL;
 }
 

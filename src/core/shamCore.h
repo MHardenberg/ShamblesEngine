@@ -33,6 +33,9 @@ typedef double f64;
     #include <stdio.h>
     #define LOG_FMT_M(fmt, x) fprintf(stderr, fmt, x)
     #define LOG_M(x) fprintf(stderr, x)
+#else
+    #define LOG_FMT_M(fmt, x) /* */
+    #define LOG_M(x) /* */
 #endif
 
 

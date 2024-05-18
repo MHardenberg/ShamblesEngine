@@ -26,6 +26,7 @@ add_subdirectory(external/GLFW)
 set(SOURCES 
     ${CMAKE_SOURCE_DIR}/src/main.c 
     ${CMAKE_SOURCE_DIR}/src/shamEngine/ui/ui.c 
+    ${CMAKE_SOURCE_DIR}/src/shamEngine/shader/shader.c 
     # external
     ${CMAKE_SOURCE_DIR}/external/GLAD/src/glad.c
     )

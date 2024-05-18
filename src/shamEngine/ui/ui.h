@@ -11,10 +11,10 @@
 
 typedef struct {
     const u16 WIDTH, HEIGHT;
-    u32 vertexBuffer, vertexArray;
-    u32 shader;
     struct {
         const GLFWwindow* sysWindow;
+        u32 vertexBufferObject, vertexArrayObject;
+        u32 shader;
     } external;
 
 } SHAM_ui;
