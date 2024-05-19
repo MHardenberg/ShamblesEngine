@@ -1,5 +1,6 @@
 #ifndef core_H
 #define DEVEL
+#include <stdlib.h>
 
 // data  
 #include <stdint.h>
@@ -17,8 +18,14 @@ typedef short f16;
 typedef float f32;
 typedef double f64;
 
+// graphics
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+typedef GLFWwindow window_t;
+
 
 // defines
+typedef i8 exitStatus_t;
 #define EXIT_SUCCESS 0
 #define EXIT_FAILURE 1
 
