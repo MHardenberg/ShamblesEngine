@@ -4,15 +4,7 @@
 #include <coreGraphics/shaders.h>
 #include <coreGraphics/verticeBuffers.h>
 
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-
-
-void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-void processInput(GLFWwindow *window);
-
 int main() {
-
     struct SHAM_UI *ui_ptr = SHAM_UI_createUI();
     if (ui_ptr == NULL) {
         LOG_M("FAILED to initialize SHAM_UI.\n");
@@ -22,9 +14,6 @@ int main() {
     if (SHAM_SHADERS_compile(ui_ptr)) {
         LOG_M("FAILED to compile shaders.\n");
     }
-
-
-
     
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
@@ -42,12 +31,10 @@ int main() {
 
     if (SHAM_setVertexBuffers(ui_ptr, vertices, sizeof(vertices),
                 indices, sizeof(indices))) {
-        LOG_M("FAILED to setup vertices\n");
+        LOG_M("FAILED to setup vertices.\n");
         goto freeUI;
     }
 
-    // render loop
-    // -----------
     while (!SHAM_UI_shouldClose(ui_ptr)) {
         SHAM_UI_processInput(ui_ptr);
         SHAM_UI_render(ui_ptr);
