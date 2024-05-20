@@ -48,37 +48,13 @@ int main() {
 
     // render loop
     // -----------
-    while (!glfwWindowShouldClose(ui_ptr->external.window)) {
-        // input
-        // -----
-        processInput(ui_ptr->external.window);
-
-        // render
-        // ------
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        // draw our first triangle
-        glUseProgram(ui_ptr->external.shader);
-        glBindVertexArray(ui_ptr->VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-        //glDrawArrays(GL_TRIANGLES, 0, 6);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-        // glBindVertexArray(0); // no need to unbind it every time 
- 
-        // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
-        // -------------------------------------------------------------------------------
-        glfwSwapBuffers(ui_ptr->external.window);
-        glfwPollEvents();
+    while (!SHAM_UI_shouldClose(ui_ptr)) {
+        SHAM_UI_processInput(ui_ptr);
+        SHAM_UI_render(ui_ptr);
+        SHAM_UI_update(ui_ptr);
     }
 
 freeUI:
     SHAM_UI_destroy(ui_ptr);
-    return 0;
-}
-
-// process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
-// ---------------------------------------------------------------------------------------------------------
-void processInput(GLFWwindow *window) {
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-        glfwSetWindowShouldClose(window, 1);
+    return EXIT_SUCCESS;
 }

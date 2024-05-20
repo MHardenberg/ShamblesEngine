@@ -1,6 +1,8 @@
 #ifndef core_H
 #define DEVEL
 #include <stdlib.h>
+#include <stdbool.h>
+#include <assert.h>
 
 // data  
 #include <stdint.h>

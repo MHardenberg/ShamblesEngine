@@ -29,17 +29,19 @@ static inline exitStatus_t procAddrsInit_() {
 }
 
 static inline exitStatus_t windowInit_(struct SHAM_UI *ui_ptr) {
-    glfwInit();
+    bool glfwInitialized = glfwInit();
+    if (!glfwInitialized) {
+        goto leaveTerminate;
+    }
+
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     ui_ptr->external.window = glfwCreateWindow(
-            ui_ptr->width, ui_ptr->height, "We're in ShAmBleS!", NULL, NULL);
+            ui_ptr->width, ui_ptr->height, TITLE, NULL, NULL);
     if (ui_ptr->external.window == NULL) {
-        glfwTerminate();
-        LOG_M("FAILED to initialize GLFW.\n");
-        return EXIT_FAILURE;
+        goto leaveTerminate;
     }
 
     glfwMakeContextCurrent(ui_ptr->external.window);
@@ -47,10 +49,23 @@ static inline exitStatus_t windowInit_(struct SHAM_UI *ui_ptr) {
             framebufferSize_callback_);
 
     return EXIT_SUCCESS;
+
+leaveTerminate:
+        glfwTerminate();
+        LOG_M("FAILED to initialize GLFW.\n");
+        return EXIT_FAILURE;
 }
 
 struct SHAM_UI *SHAM_UI_createUI();
 
 void SHAM_UI_destroy(struct SHAM_UI *ptr);
+
+bool SHAM_UI_shouldClose(struct SHAM_UI *ui_ptr);
+
+void SHAM_UI_processInput(struct SHAM_UI *ui_ptr);
+
+void SHAM_UI_render(struct SHAM_UI *ui_ptr);
+
+void SHAM_UI_update(struct SHAM_UI *ui_ptr);
 
 #endif // !SHAM_UI_H
