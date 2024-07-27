@@ -1,15 +1,13 @@
 #include "ui.h"
 
 struct SHAM_UI *SHAM_UI_createUI() {
-    struct SHAM_UI ui = {.width = SCR_WIDTH, .height = SCR_HEIGHT};
     struct SHAM_UI *ui_ptr = malloc(sizeof(struct SHAM_UI));
     if (ui_ptr == NULL) {
         goto exitFailure;
     }
+    ui_ptr->width = SCR_WIDTH;
+    ui_ptr->height = SCR_HEIGHT;
 
-    if (memcpy(ui_ptr, &ui, sizeof(struct SHAM_UI)) == NULL) {
-        goto freeUI;       
-    };
 
     if (windowInit_(ui_ptr)) {goto freeUI;}
     if (procAddrsInit_()) {goto freeUI;}

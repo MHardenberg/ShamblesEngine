@@ -34,7 +34,8 @@ exitStatus_t SHAM_setVertexBuffers(struct SHAM_UI *ui_ptr,
     // unbind VAOs (nor VBOs) when it's not directly necessary.
     glBindVertexArray(0); 
 
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
     return EXIT_SUCCESS;
 }
