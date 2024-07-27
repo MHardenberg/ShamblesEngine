@@ -4,6 +4,7 @@
 #include <coreGraphics/shaders.h>
 #include <coreGraphics/verticeBuffers.h>
 
+
 int main() {
     struct SHAM_UI *ui_ptr = SHAM_UI_createUI();
     if (ui_ptr == NULL) {
@@ -43,5 +44,7 @@ int main() {
 
 freeUI:
     SHAM_UI_destroy(ui_ptr);
+
+
     return EXIT_SUCCESS;
 }

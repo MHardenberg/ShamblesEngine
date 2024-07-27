@@ -1,15 +1,32 @@
 #include <stdio.h>
+#include <time.h>
 #include "io.h"
+#ifdef __linux
+    #include <sys/stat.h>
 
-
-exitStatus_t CORE_readFile(char *dest, const char * path, size_t bytes) {
-    if (dest == NULL) {
-        LOG_M("dest pointer is NULL.");
-        return EXIT_FAILURE;
+    size_t fileSize(const char *file) {
+        struct stat st;
+        stat(file, &st);
+        return st.st_size;
     }
+
+#endif
+
+#ifdef _WIN32
+    #include <fileapi.h>
+
+    size_t fileSize(const char *file)  {
+        size_t size;
+        GetFileSize(file, &size);
+        return size;
+    }
+
+#endif
+
+const char *CORE_readFile(const char * path) {
     if (path == NULL) {
         LOG_M("path pointer is NULL.");
-        return EXIT_FAILURE;
+        return NULL;
     }
 
     FILE *file;
@@ -17,24 +34,18 @@ exitStatus_t CORE_readFile(char *dest, const char * path, size_t bytes) {
 
     if (file == NULL) {
         LOG_M("file path invalid.");
-        return EXIT_FAILURE;
+        return NULL;
     }
-        char c;
-        size_t i = 0;
+    
+    size_t length;
+    char *content = malloc(length);
+    if (content == NULL) {
+        LOG_M("Allocation error.");
+        return NULL;
+    }
 
-
-        do {
-            if(i == bytes) {
-                LOG_M("Buffer exceeded.");
-                return EXIT_FAILURE;
-            }
-
-         c = getc(file);
-         dest[i] = c;
-         ++i;
-
-        } while (c != EOF);
-    return EXIT_SUCCESS;
+    fread(content, sizeof(char), length, file);
+    return content;
 }
 
 

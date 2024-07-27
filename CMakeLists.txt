@@ -25,6 +25,7 @@ add_subdirectory(external/GLFW)
 # Executable sources
 set(SOURCES 
     ${CMAKE_SOURCE_DIR}/src/main.c 
+    ${CMAKE_SOURCE_DIR}/src/core/utils/io.c 
     ${CMAKE_SOURCE_DIR}/src/core/coreGraphics/shaders.c 
     ${CMAKE_SOURCE_DIR}/src/core/coreGraphics/ui.c 
     ${CMAKE_SOURCE_DIR}/src/core/coreGraphics/verticeBuffers.c 

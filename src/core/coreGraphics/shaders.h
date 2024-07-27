@@ -1,8 +1,13 @@
 #ifndef SHAM_SHADERS_H
 #define SHAM_SHADERS_H
 
+#include "utils/io.h"
 #include <core.h>
+#include <utils.h>
 #include <coreGraphics/ui.h>
+
+#define fragmentShaderPath "../src/shaders/fragmentShader"
+
 
 static inline exitStatus_t vertexShader_compile_ (u32 *vertexShader,
         char *infoLog, size_t bufferLen) {
@@ -32,16 +37,13 @@ static inline exitStatus_t vertexShader_compile_ (u32 *vertexShader,
 static inline exitStatus_t fragmentShader_compile_ (u32 *fragmentShader,
         char *infoLog, size_t bufferLen) {
     if (fragmentShader == NULL) {return EXIT_FAILURE;}
-    const char *fragmentShaderSource = 
-        "#version 460 core\n"
-        "out vec4 FragColor;\n"
-        "void main() {\n"
-        "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
-        "}\n\0";
+
+    const char *fragmentShaderSource = CORE_readFile(fragmentShaderPath);
 
     *fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(*fragmentShader, 1, &fragmentShaderSource, NULL);
+    glShaderSource(*fragmentShader, 1, (const GLchar * const *) fragmentShaderSource, NULL);
     glCompileShader(*fragmentShader);
+    free((char *)fragmentShaderSource);
 
     // check for shader compile errors
     int success;

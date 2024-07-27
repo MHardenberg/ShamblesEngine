@@ -4,6 +4,6 @@
 #include <core.h>
 
 
-exitStatus_t CORE_readFile(char *dest, const char * path, size_t bytes);
+const char *CORE_readFile(const char * path);
 
 #endif // !io_H
