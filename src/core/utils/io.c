@@ -37,7 +37,7 @@ const char *CORE_readFile(const char * path) {
         return NULL;
     }
     
-    size_t length;
+    size_t length = fileSize(path);
     char *content = malloc(length);
     if (content == NULL) {
         LOG_M("Allocation error.");

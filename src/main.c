@@ -5,15 +5,20 @@
 #include <coreGraphics/verticeBuffers.h>
 
 
+int exitStatus = EXIT_SUCCESS;
+
 int main() {
     struct SHAM_UI *ui_ptr = SHAM_UI_createUI();
     if (ui_ptr == NULL) {
         LOG_M("FAILED to initialize SHAM_UI.\n");
-        return EXIT_FAILURE;
+        exitStatus = EXIT_FAILURE;
+        goto exit;
     }
 
     if (SHAM_SHADERS_compile(ui_ptr)) {
         LOG_M("FAILED to compile shaders.\n");
+        exitStatus = EXIT_FAILURE;
+        goto freeUI;
     }
     
     // set up vertex data (and buffer(s)) and configure vertex attributes
@@ -45,6 +50,6 @@ int main() {
 freeUI:
     SHAM_UI_destroy(ui_ptr);
 
-
-    return EXIT_SUCCESS;
+exit:
+    return exitStatus;
 }
